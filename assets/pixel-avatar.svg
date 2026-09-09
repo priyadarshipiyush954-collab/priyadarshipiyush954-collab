@@ -1,7 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320" shape-rendering="crispEdges">
   <defs>
     <clipPath id="face"><rect x="96" y="72" width="128" height="128" rx="8"/></clipPath>
-    <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
     <style>
       @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
       @keyframes scan{0%{transform:translateY(0);opacity:.15}50%{opacity:.55}100%{transform:translateY(112px);opacity:.15}}
@@ -18,13 +17,10 @@
   <g class="float">
     <rect x="84" y="56" width="152" height="20" rx="4" fill="#0ea5e9" opacity=".9"/>
     <rect x="92" y="76" width="136" height="124" rx="10" fill="#111827" stroke="#22d3ee" stroke-width="4"/>
-    <image href="avatar.jpg" x="96" y="72" width="128" height="128" preserveAspectRatio="xMidYMid slice" clip-path="url(#face)"/>
+    <image href="https://raw.githubusercontent.com/priyadarshipiyush954-collab/priyadarshipiyush954-collab/main/assets/avatar.jpg" x="96" y="72" width="128" height="128" preserveAspectRatio="xMidYMid slice" clip-path="url(#face)"/>
     <rect x="96" y="72" width="128" height="128" fill="none" stroke="#a5f3fc" stroke-width="2"/>
     <rect x="100" y="108" width="120" height="3" fill="#67e8f9" class="scan" opacity=".3"/>
-    <g class="blink">
-      <rect x="115" y="125" width="10" height="5" fill="#020617"/>
-      <rect x="195" y="125" width="10" height="5" fill="#020617"/>
-    </g>
+    <g class="blink"><rect x="115" y="125" width="10" height="5" fill="#020617"/><rect x="195" y="125" width="10" height="5" fill="#020617"/></g>
     <rect x="141" y="164" width="38" height="5" fill="#020617"/>
     <rect x="133" y="205" width="54" height="9" rx="2" fill="#0f172a" stroke="#22c55e"/>
     <circle cx="144" cy="209" r="3" fill="#22c55e"/>
