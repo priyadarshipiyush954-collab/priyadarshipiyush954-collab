@@ -1,0 +1,8 @@
+{
+  "name": "Piyush Priyadarshi Portfolio",
+  "description": "Interactive developer portfolio showcasing Piyush Priyadarshi's AI/ML projects, technical skills, and GitHub contribution snake activity.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
