@@ -2,11 +2,15 @@ name: Generate Snake Animation
 
 on:
   schedule:
-    - cron: "0 0 * * *"   # runs once a day
+    - cron: "0 0 * * *"
   workflow_dispatch:
   push:
     branches:
       - main
+
+concurrency:
+  group: snake-animation-output
+  cancel-in-progress: true
 
 jobs:
   generate:
@@ -22,10 +26,29 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      - name: Push the generated files to the "output" branch
-        uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
+      - name: Publish generated files to output branch
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          rm -rf /tmp/snake-output
+          git clone --depth 1 --branch output "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" /tmp/snake-output
+
+          rm -f /tmp/snake-output/github-contribution-grid-snake.svg /tmp/snake-output/github-contribution-grid-snake-dark.svg
+          cp dist/github-contribution-grid-snake.svg /tmp/snake-output/
+          cp dist/github-contribution-grid-snake-dark.svg /tmp/snake-output/
+
+          cd /tmp/snake-output
+          git add github-contribution-grid-snake.svg github-contribution-grid-snake-dark.svg
+
+          if git diff --cached --quiet; then
+            echo "No snake changes to publish."
+            exit 0
+          fi
+
+          git commit -m "Update contribution snake"
+          git push origin output
