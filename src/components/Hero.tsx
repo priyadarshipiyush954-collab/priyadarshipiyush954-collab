@@ -65,6 +65,17 @@ export const Hero: React.FC = () => {
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <div className="text-center">
+          {/* Animated Avatar */}
+          <div className="flex justify-center -mt-14 mb-4 relative z-10">
+            <div className="relative group">
+              <img
+                src="/assets/animated-avatar.svg"
+                alt="Piyush Priyadarshi Animated Profile"
+                className="w-48 h-48 drop-shadow-[0_0_25px_rgba(0,242,254,0.35)] transition-transform duration-300 hover:scale-105"
+              />
+            </div>
+          </div>
+
           {/* Status pill */}
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold tracking-wide uppercase mb-6">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />

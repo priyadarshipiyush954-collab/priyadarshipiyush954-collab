@@ -2,6 +2,13 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6DD5FA,100:2980B9&height=200&section=header&text=Hi%20There!%20I'm%20Piyush%20%F0%9F%91%8B&fontSize=38&fontColor=ffffff&animation=fadeIn&fontAlignY=35" width="100%"/>
 
+<!-- Animated Cyber Avatar with Neon Orbital Rings -->
+<p align="center">
+  <a href="https://github.com/priyadarshipiyush954-collab">
+    <img src="https://raw.githubusercontent.com/priyadarshipiyush954-collab/priyadarshipiyush954-collab/main/assets/animated-avatar.svg" width="210" alt="Piyush Priyadarshi Animated Profile" />
+  </a>
+</p>
+
 <a href="https://github.com/priyadarshipiyush954-collab">
   <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=24&pause=1000&color=2980B9&center=true&vCenter=true&width=650&lines=CS+Undergrad+%40+Manipal+University+Jaipur;AI+%2F+ML+Enthusiast+%F0%9F%A7%A0;Building+with+Python%2C+TensorFlow%2C+PyTorch;Computer+Vision+%7C+NLP+%7C+Voice+AI;Open+to+AI%2FML+Internships+%F0%9F%9A%80" alt="Typing SVG" />
 </a>
@@ -10,7 +17,7 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/piyush-priyadarshi-540452349)
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/piyush_priyadarshi04/)
-[![Live Portfolio](https://img.shields.io/badge/Live%20Portfolio-Interactive%20Web%20App-2980B9?style=for-the-badge&logo=google&logoColor=white)](https://ais-dev-q553yfx4nyyjg4znn4kvia-316837499100.asia-southeast1.run.app)
+[![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:priyadarshipiyush954@gmail.com)
 [![Profile Views](https://komarev.com/ghpvc/?username=priyadarshipiyush954-collab&color=2980b9&style=for-the-badge&label=PROFILE+VIEWS)](https://github.com/priyadarshipiyush954-collab)
 
 </div>
@@ -81,12 +88,37 @@ Object detection pipeline
 <td width="50%">
 
 **🏗️ [HACKHATHON3.0](https://github.com/priyadarshipiyush954-collab/HACKHATHON3.0)**
-*Add a one-line description here*
-![Add-tech](https://img.shields.io/badge/-Add%20tech-808080?style=flat-square)
+Autonomous multi-agent drone routing engine with NFZ avoidance and energy optimization
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Algorithms](https://img.shields.io/badge/-Algorithms-F7931E?style=flat-square)
 
 </td>
 </tr>
 </table>
+
+---
+
+### 📊 GitHub Stats & Analytics
+
+<div align="center">
+
+<img src="https://github-profile-trophy.vercel.app/?username=priyadarshipiyush954-collab&theme=radical&no-frame=true&no-bg=true&margin_w=4" alt="GitHub Trophies" />
+
+<br/><br/>
+
+<a href="https://github.com/priyadarshipiyush954-collab">
+  <img src="https://github-readme-stats.vercel.app/api?username=priyadarshipiyush954-collab&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=79C0FF&text_color=C9D1D9" height="165" alt="GitHub Stats" />
+</a>
+<a href="https://github.com/priyadarshipiyush954-collab">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=priyadarshipiyush954-collab&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9" height="165" alt="Top Languages" />
+</a>
+
+<br/>
+
+<a href="https://github.com/priyadarshipiyush954-collab">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=priyadarshipiyush954-collab&theme=tokyonight&hide_border=true&background=0D1117&ring=58A6FF&fire=FF9800&currStreakNum=58A6FF" height="165" alt="GitHub Streak" />
+</a>
+
+</div>
 
 ---
 
