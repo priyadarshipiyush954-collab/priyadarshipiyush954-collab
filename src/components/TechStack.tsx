@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'motion/react';
 import { techCategories } from '../data';
 import { Layers, CheckCircle2 } from 'lucide-react';
 
@@ -6,7 +7,12 @@ export const TechStack: React.FC = () => {
   return (
     <section id="tech-stack" className="py-12 bg-slate-950/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mb-8">
+        <motion.div 
+          className="mb-8"
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+        >
           <div className="flex items-center gap-2 mb-1">
             <span className="text-xl">🛠️</span>
             <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
@@ -16,10 +22,15 @@ export const TechStack: React.FC = () => {
           <p className="text-sm text-slate-400">
             Languages, deep learning frameworks, and engineering tools powering my builds.
           </p>
-        </div>
+        </motion.div>
 
         {/* Skill Icons Visual Banner from README */}
-        <div className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 mb-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+        <motion.div 
+          className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 mb-8 flex flex-col sm:flex-row items-center justify-between gap-6"
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+        >
           <div>
             <h3 className="text-sm font-semibold text-slate-200 mb-1">Quick Icon Overview</h3>
             <p className="text-xs text-slate-400">Official icons referenced in profile README</p>
@@ -32,14 +43,26 @@ export const TechStack: React.FC = () => {
               referrerPolicy="no-referrer"
             />
           </div>
-        </div>
+        </motion.div>
 
         {/* Detailed Category Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <motion.div 
+          className="grid grid-cols-1 md:grid-cols-3 gap-6"
+          variants={{
+            visible: { transition: { staggerChildren: 0.1 } }
+          }}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
           {techCategories.map((category, idx) => (
-            <div
+            <motion.div
               key={idx}
               className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800/80 flex flex-col justify-between"
+              variants={{
+                hidden: { opacity: 0, y: 30 },
+                visible: { opacity: 1, y: 0 }
+              }}
             >
               <div>
                 <div className="flex items-center gap-2 text-sky-400 font-bold text-sm uppercase tracking-wider mb-4 pb-3 border-b border-slate-800">
@@ -63,9 +86,9 @@ export const TechStack: React.FC = () => {
                   ))}
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

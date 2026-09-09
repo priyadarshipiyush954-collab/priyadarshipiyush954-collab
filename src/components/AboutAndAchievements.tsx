@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'motion/react';
 import { profileData } from '../data';
 import { Trophy, Compass, MessageSquare, Zap, Terminal, Sparkles, Check } from 'lucide-react';
 
@@ -8,7 +9,12 @@ export const AboutAndAchievements: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Left Column: YAML-style About Me Terminal Card */}
-          <div className="flex flex-col h-full">
+          <motion.div 
+            className="flex flex-col h-full"
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+          >
             <div className="flex items-center gap-2 mb-4">
               <span className="text-xl">👋</span>
               <h2 className="text-2xl font-bold text-white tracking-tight">About Me</h2>
@@ -79,10 +85,15 @@ export const AboutAndAchievements: React.FC = () => {
                 </ul>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Right Column: Currently, Fun Fact & Engagement */}
-          <div className="flex flex-col h-full justify-between gap-6">
+          <motion.div 
+            className="flex flex-col h-full justify-between gap-6"
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+          >
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-xl">🎯</span>
@@ -91,21 +102,33 @@ export const AboutAndAchievements: React.FC = () => {
 
               <div className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 space-y-4">
                 {profileData.currentFocus.map((focus, i) => (
-                  <div key={i} className="flex items-start gap-3">
+                  <motion.div 
+                    key={i} 
+                    className="flex items-start gap-3"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.1 }}
+                  >
                     <div className="w-5 h-5 rounded-md bg-sky-500/10 border border-sky-500/30 flex items-center justify-center shrink-0 mt-0.5">
                       <Check className="w-3 h-3 text-sky-400" />
                     </div>
                     <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
                       {focus}
                     </p>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </div>
 
             {/* Fun Fact & Ask Me About */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="p-5 rounded-xl bg-slate-900/70 border border-slate-800">
+              <motion.div 
+                className="p-5 rounded-xl bg-slate-900/70 border border-slate-800"
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+              >
                 <div className="flex items-center gap-2 text-amber-400 font-semibold text-xs mb-2">
                   <Zap className="w-4 h-4" />
                   <span>Fun Fact</span>
@@ -113,9 +136,15 @@ export const AboutAndAchievements: React.FC = () => {
                 <p className="text-xs text-slate-300 italic">
                   "{profileData.funFact}"
                 </p>
-              </div>
+              </motion.div>
 
-              <div className="p-5 rounded-xl bg-slate-900/70 border border-slate-800">
+              <motion.div 
+                className="p-5 rounded-xl bg-slate-900/70 border border-slate-800"
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.1 }}
+              >
                 <div className="flex items-center gap-2 text-sky-400 font-semibold text-xs mb-2">
                   <MessageSquare className="w-4 h-4" />
                   <span>Ask Me About</span>
@@ -123,9 +152,9 @@ export const AboutAndAchievements: React.FC = () => {
                 <p className="text-xs text-slate-300">
                   Computer Vision, NLP, Voice AI, or Python / TensorFlow / PyTorch architectures.
                 </p>
-              </div>
+              </motion.div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

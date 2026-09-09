@@ -4,6 +4,7 @@ import { Hero } from './components/Hero';
 import { SnakeContributionGame } from './components/SnakeContributionGame';
 import { FeaturedProjects } from './components/FeaturedProjects';
 import { TechStack } from './components/TechStack';
+import { GitHubStats } from './components/GitHubStats';
 import { AboutAndAchievements } from './components/AboutAndAchievements';
 import { Footer } from './components/Footer';
 
@@ -17,6 +18,7 @@ export function App() {
           <SnakeContributionGame />
           <FeaturedProjects />
           <TechStack />
+          <GitHubStats />
           <AboutAndAchievements />
         </div>
       </main>

@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { ExternalLink, Github, Search, Eye, Mic, UserCheck, FileText, Hand, Boxes, Navigation } from 'lucide-react';
+import { motion } from 'motion/react';
 import { projectsData } from '../data';
 import { Project } from '../types';
 
@@ -41,11 +42,15 @@ export const FeaturedProjects: React.FC = () => {
   };
 
   return (
-    <section id="projects" className="py-12">
+    <motion.section id="projects" className="py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
-          <div>
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+          >
             <div className="flex items-center gap-2 mb-1">
               <span className="text-xl">🚀</span>
               <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
@@ -55,7 +60,7 @@ export const FeaturedProjects: React.FC = () => {
             <p className="text-sm text-slate-400">
               Open-source machine learning systems, computer vision tools, and algorithmic engines.
             </p>
-          </div>
+          </motion.div>
 
           {/* Search bar */}
           <div className="relative w-full sm:w-64">
@@ -95,12 +100,26 @@ export const FeaturedProjects: React.FC = () => {
             <p className="text-sm text-slate-400">No projects matching your search criteria.</p>
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <motion.div 
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+            variants={{
+              visible: { transition: { staggerChildren: 0.1 } }
+            }}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
             {filteredProjects.map((project) => (
-              <div
+              <motion.div
                 key={project.id}
                 id={`project-card-${project.id}`}
-                className="group flex flex-col justify-between p-6 bg-slate-900/70 hover:bg-slate-900 border border-slate-800/80 hover:border-slate-700 rounded-2xl transition-all duration-200 hover:-translate-y-1 shadow-lg hover:shadow-sky-500/5"
+                className="group flex flex-col justify-between p-6 bg-slate-900/70 hover:bg-slate-900 border border-slate-800/80 hover:border-slate-700 rounded-2xl transition-all duration-200 shadow-lg hover:shadow-sky-500/5"
+                initial={{ opacity: 0, y: 40, scale: 0.95 }}
+                variants={{
+                  visible: { opacity: 1, y: 0, scale: 1 }
+                }}
+                transition={{ duration: 0.5 }}
+                whileHover={{ y: -6, transition: { duration: 0.2 } }}
               >
                 <div>
                   {/* Top Bar: Icon + Category Badge + Link */}
@@ -163,11 +182,11 @@ export const FeaturedProjects: React.FC = () => {
                     <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </div>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         )}
       </div>
-    </section>
+    </motion.section>
   );
 };
