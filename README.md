@@ -10,6 +10,7 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/piyush-priyadarshi-540452349)
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/piyush_priyadarshi04/)
+[![Live Portfolio](https://img.shields.io/badge/Live%20Portfolio-Interactive%20Web%20App-2980B9?style=for-the-badge&logo=google&logoColor=white)](https://ais-dev-q553yfx4nyyjg4znn4kvia-316837499100.asia-southeast1.run.app)
 [![Profile Views](https://komarev.com/ghpvc/?username=priyadarshipiyush954-collab&color=2980b9&style=for-the-badge&label=PROFILE+VIEWS)](https://github.com/priyadarshipiyush954-collab)
 
 </div>
@@ -100,7 +101,14 @@ Object detection pipeline
 ### 🐍 Contribution Activity
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/priyadarshipiyush954-collab/priyadarshipiyush954-collab/output/github-contribution-grid-snake.svg" alt="contribution snake animation" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/priyadarshipiyush954-collab/priyadarshipiyush954-collab/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/priyadarshipiyush954-collab/priyadarshipiyush954-collab/output/github-contribution-grid-snake.svg">
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/priyadarshipiyush954-collab/priyadarshipiyush954-collab/output/github-contribution-grid-snake.svg" />
+  </picture>
+</p>
+<p align="center">
+  <i>🎮 Play the interactive snake simulation on the <a href="https://ais-dev-q553yfx4nyyjg4znn4kvia-316837499100.asia-southeast1.run.app">Live Portfolio</a></i>
 </p>
 
 ---
