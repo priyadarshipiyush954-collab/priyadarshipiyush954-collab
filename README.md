@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6DD5FA,100:2980B9&height=200&section=header&text=Hi%20There!%20I'm%20Piyush%20%F0%9F%91%8B&fontSize=38&fontColor=ffffff&animation=fadeIn&fontAlignY=35" width="100%"/>
 
-<!-- Animated Cyber Avatar -->
+<!-- Animated Cyber Avatar with Neon Orbital Rings -->
 <p align="center">
   <a href="https://github.com/priyadarshipiyush954-collab">
     <img src="https://raw.githubusercontent.com/priyadarshipiyush954-collab/priyadarshipiyush954-collab/main/assets/animated-avatar.svg" width="210" alt="Piyush Priyadarshi Animated Profile" />
@@ -106,10 +106,10 @@ Autonomous multi-agent drone routing engine with NFZ avoidance and energy optimi
 <br/><br/>
 
 <a href="https://github.com/priyadarshipiyush954-collab">
-  <img src="https://github-readme-stats.vercel.app/api?username=priyadarshipiyush954-collab&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=79C0FF&text_color=C9D1D9" height="165" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=priyadarshipiyush954-collab&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=79C0FF&text_color=C9D1D9&cache_seconds=86400" height="165" alt="GitHub Stats" />
 </a>
 <a href="https://github.com/priyadarshipiyush954-collab">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=priyadarshipiyush954-collab&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9" height="165" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=priyadarshipiyush954-collab&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&cache_seconds=86400" height="165" alt="Top Languages" />
 </a>
 
 <br/>
@@ -138,6 +138,9 @@ Autonomous multi-agent drone routing engine with NFZ avoidance and energy optimi
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/priyadarshipiyush954-collab/priyadarshipiyush954-collab/output/github-contribution-grid-snake.svg">
     <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/priyadarshipiyush954-collab/priyadarshipiyush954-collab/output/github-contribution-grid-snake.svg" />
   </picture>
+</p>
+<p align="center">
+  <i>🎮 Play the interactive snake simulation on the <a href="https://ais-dev-q553yfx4nyyjg4znn4kvia-316837499100.asia-southeast1.run.app">Live Portfolio</a></i>
 </p>
 
 ---
