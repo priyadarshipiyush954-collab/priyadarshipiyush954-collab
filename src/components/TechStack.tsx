@@ -20,7 +20,7 @@ export const TechStack: React.FC = () => {
             </h2>
           </div>
           <p className="text-sm text-slate-400">
-            Languages, deep learning frameworks, and engineering tools powering my builds.
+            Languages, model frameworks, climate data sources, and deployment tools behind my projects.
           </p>
         </motion.div>
 
