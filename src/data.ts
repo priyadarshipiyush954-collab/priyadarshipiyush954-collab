@@ -4,30 +4,44 @@ export const profileData: ProfileInfo = {
   name: 'Piyush Priyadarshi',
   role: 'CS Undergraduate',
   university: 'Manipal University Jaipur',
-  focus: 'Artificial Intelligence & Machine Learning',
-  building: ['Computer Vision', 'NLP', 'Voice AI'],
-  stack: ['Python', 'TensorFlow', 'PyTorch', 'OpenCV', 'Flask', 'C', 'Solidity', 'Git', 'GitHub', 'VS Code'],
+  focus: 'Applied AI & Machine Learning for environmental monitoring',
+  building: ['Climate AI', 'Satellite ML', 'Computer Vision', 'NLP'],
+  stack: ['Python', 'PyTorch', 'TypeScript', 'React', 'FastAPI', 'Docker', 'TensorFlow', 'OpenCV', 'Flask', 'C', 'Solidity', 'Git', 'GitHub', 'VS Code'],
   status: 'Open to AI/ML & Software Engineering internships',
   email: 'priyadarshipiyush954@gmail.com',
   githubUser: 'priyadarshipiyush954-collab',
   githubUrl: 'https://github.com/priyadarshipiyush954-collab',
   linkedinUrl: 'https://www.linkedin.com/in/piyush-priyadarshi-540452349',
   instagramUrl: 'https://www.instagram.com/piyush_priyadarshi04/',
-  hackathonHighlights: [
-    'Goldman Sachs India Hackathon 2026 finalist / participant',
-    'Solved a multi-agent drone-routing problem (NFZ avoidance, dynamic energy management, parallel dispatch)',
-    'Conducted gas-overhead benchmarking across Solidity contract security patterns (ERC-721 / ERC-1155)'
+  selectedHighlights: [
+    'Built CycloneSense, a live cyclone dashboard with satellite layers, track forecasts, and a validation-based uncertainty cone',
+    'Held out five storms during North Indian Ocean validation; the model beats persistence at 7 of 8 leads, but not at +6 h',
+    'Goldman Sachs India Hackathon 2026 participant',
+    'Solved a multi-agent drone-routing problem with no-fly-zone avoidance and energy management',
+    'Benchmarked gas overhead across ERC-721 / ERC-1155 security patterns'
   ],
   currentFocus: [
-    'AI-based resume analyzer & matcher with job descriptions',
-    'AI/ML air-quality downscaling & environmental forecasting system',
-    'Career-guidance platform for underserved students',
-    'Algorithmic problem-solving & system-design for competitive programming'
+    'CycloneSense: live cyclone monitoring with satellite feeds and track / intensity forecasts',
+    'North Indian Ocean track research with validation grouped by storm, not overlapping time windows',
+    'Satellite-image wind estimation with clear input limits and research caveats',
+    'Reliable model deployment with labelled fallbacks and measurable forecast uncertainty'
   ],
   funFact: "I'd rather ship a working prototype than polish a slide deck"
 };
 
 export const projectsData: Project[] = [
+  {
+    id: 'cyclonesense',
+    name: 'CycloneSense',
+    title: 'AI Cyclone Monitoring & Track Forecasting',
+    description: 'Live storm feeds, satellite layers, and track / intensity forecasts in one dashboard. Research notes report storm-held-out validation; fallback forecasts are labelled, and the project is not an official warning system.',
+    tags: ['Python', 'PyTorch', 'NASA GIBS', 'NOAA IBTrACS', 'React', 'FastAPI'],
+    githubUrl: 'https://github.com/priyadarshipiyush954-collab/CycloneSense',
+    liveUrl: 'https://cyclone-sense-2klx.vercel.app/',
+    researchUrl: 'https://github.com/priyadarshipiyush954-collab/CycloneSense/blob/main/docs/MODEL.md',
+    category: 'Climate AI',
+    featured: true,
+  },
   {
     id: 'ai_voice',
     name: 'ai_voice',
@@ -92,28 +106,32 @@ export const projectsData: Project[] = [
 
 export const techCategories = [
   {
-    title: 'Core Languages',
+    title: 'Languages & Frameworks',
     skills: [
-      { name: 'Python', level: 'Primary', desc: 'AI/ML scripting, PyTorch, OpenCV, Flask' },
-      { name: 'C', level: 'Proficient', desc: 'Low-level systems, data structures & algorithms' },
-      { name: 'Solidity', level: 'Specialized', desc: 'Smart contracts, ERC-721/1155 security & gas optimization' },
+      { name: 'Python', level: 'Primary', desc: 'AI/ML modeling, satellite-data pipelines, and inference' },
+      { name: 'TypeScript', level: 'Application UI', desc: 'React dashboards and portfolio interfaces' },
+      { name: 'PyTorch', level: 'Framework', desc: 'Sequence models and computer-vision experiments' },
+      { name: 'OpenCV', level: 'Vision', desc: 'Image processing and real-time video' },
+      { name: 'C & Solidity', level: 'Additional', desc: 'Algorithms, systems fundamentals, and contract benchmarking' },
     ]
   },
   {
-    title: 'AI, ML & Deep Learning',
+    title: 'Cyclone Data & Evaluation',
     skills: [
-      { name: 'TensorFlow', level: 'Framework', desc: 'Neural network training & deployment' },
-      { name: 'PyTorch', level: 'Framework', desc: 'Custom architectures & computer vision models' },
-      { name: 'OpenCV', level: 'Vision', desc: 'Image processing, feature extraction, real-time video' },
-      { name: 'NLP & Voice AI', level: 'Domain', desc: 'Speech recognition, contextual embeddings, text processing' }
+      { name: 'NOAA IBTrACS', level: 'Best-track data', desc: 'Storm-level track and intensity labels' },
+      { name: 'NASA GIBS', level: 'Satellite imagery', desc: 'MODIS imagery for cyclone research' },
+      { name: 'GDACS + Open-Meteo', level: 'Live feeds', desc: 'Cyclone alerts and city weather conditions' },
+      { name: 'Storm-level validation', level: 'Evaluation', desc: 'Held-out storms and persistence-baseline comparisons' },
     ]
   },
   {
-    title: 'Web & Tooling',
+    title: 'Web & Deployment',
     skills: [
-      { name: 'Flask', level: 'Backend', desc: 'Microservice APIs & ML inference serving' },
-      { name: 'Git & GitHub', level: 'Version Control', desc: 'CI/CD workflows, collaborative repository management' },
-      { name: 'VS Code', level: 'IDE', desc: 'Primary development & debugging environment' }
+      { name: 'React + TypeScript', level: 'Frontend', desc: 'Interactive portfolio and monitoring dashboards' },
+      { name: 'FastAPI', level: 'Model API', desc: 'Python inference endpoints for wind and track estimates' },
+      { name: 'Docker', level: 'Deployment', desc: 'Reproducible application and model services' },
+      { name: 'Git & GitHub', level: 'Version Control', desc: 'Source control, CI, and collaborative workflows' },
+      { name: 'VS Code', level: 'IDE', desc: 'Development and debugging environment' },
     ]
   }
 ];

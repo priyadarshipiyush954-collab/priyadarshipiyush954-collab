@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { ExternalLink, Github, Search, Eye, Mic, UserCheck, FileText, Hand, Boxes, Navigation } from 'lucide-react';
+import { ExternalLink, Github, Search, Eye, Mic, UserCheck, FileText, Hand, Boxes, Navigation, CloudLightning } from 'lucide-react';
 import { motion } from 'motion/react';
 import { projectsData } from '../data';
 import { Project } from '../types';
@@ -8,7 +8,7 @@ export const FeaturedProjects: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const [searchQuery, setSearchQuery] = useState<string>('');
 
-  const categories = ['All', 'AI/ML', 'Computer Vision', 'NLP', 'Hackathon'];
+  const categories = ['All', 'Climate AI', 'AI/ML', 'Computer Vision', 'NLP', 'Hackathon'];
 
   const filteredProjects = useMemo(() => {
     return projectsData.filter((project) => {
@@ -24,6 +24,8 @@ export const FeaturedProjects: React.FC = () => {
 
   const getProjectIcon = (id: string) => {
     switch (id) {
+      case 'cyclonesense':
+        return <CloudLightning className="w-5 h-5 text-cyan-400" />;
       case 'ai_voice':
         return <Mic className="w-5 h-5 text-sky-400" />;
       case 'face_recognition':
@@ -58,7 +60,7 @@ export const FeaturedProjects: React.FC = () => {
               </h2>
             </div>
             <p className="text-sm text-slate-400">
-              Open-source machine learning systems, computer vision tools, and algorithmic engines.
+              Climate AI research alongside computer vision, language, and algorithmic projects.
             </p>
           </motion.div>
 
@@ -171,16 +173,42 @@ export const FeaturedProjects: React.FC = () => {
                     ))}
                   </div>
 
-                  <a
-                    id={`view-repo-btn-${project.id}`}
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-sky-400 hover:text-sky-300 transition-colors"
-                  >
-                    <span>View Repository</span>
-                    <ExternalLink className="w-3.5 h-3.5" />
-                  </a>
+                  <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+                    <a
+                      id={`view-repo-btn-${project.id}`}
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-xs font-semibold text-sky-400 hover:text-sky-300 transition-colors"
+                    >
+                      <span>View Repository</span>
+                      <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                    {project.liveUrl && (
+                      <a
+                        id={`live-dashboard-btn-${project.id}`}
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-300 hover:text-white transition-colors"
+                      >
+                        <span>Open Dashboard</span>
+                        <ExternalLink className="w-3.5 h-3.5" />
+                      </a>
+                    )}
+                    {project.researchUrl && (
+                      <a
+                        id={`research-notes-btn-${project.id}`}
+                        href={project.researchUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-300 hover:text-white transition-colors"
+                      >
+                        <span>Research Notes</span>
+                        <ExternalLink className="w-3.5 h-3.5" />
+                      </a>
+                    )}
+                  </div>
                 </div>
               </motion.div>
             ))}

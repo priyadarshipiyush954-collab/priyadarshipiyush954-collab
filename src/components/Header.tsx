@@ -34,7 +34,7 @@ export const Header: React.FC = () => {
           <a href="#projects" className="hover:text-sky-400 transition-colors">Projects</a>
           <a href="#snake-contribution-section" className="hover:text-sky-400 transition-colors">Snake Activity</a>
           <a href="#tech-stack" className="hover:text-sky-400 transition-colors">Tech Stack</a>
-          <a href="#about" className="hover:text-sky-400 transition-colors">About & Hackathons</a>
+          <a href="#about" className="hover:text-sky-400 transition-colors">About & Research</a>
         </nav>
 
         {/* Social Action Links */}

@@ -6,10 +6,10 @@ import { PixelAvatar } from './PixelAvatar';
 import { ParticleBackground } from './ParticleBackground';
 
 const TYPING_LINES = [
-  'CS Undergrad @ Manipal University Jaipur',
-  'AI / ML Enthusiast 🧠',
-  'Building with Python, TensorFlow, PyTorch',
-  'Computer Vision | NLP | Voice AI',
+  'CS Undergraduate @ Manipal University Jaipur',
+  'Climate AI & Satellite ML 🌦️',
+  'CycloneSense | Tropical Cyclone Research',
+  'Building with Python, PyTorch, React',
   'Open to AI/ML Internships 🚀'
 ];
 
@@ -133,9 +133,9 @@ export const Hero: React.FC = () => {
             variants={itemVariants}
             className="max-w-2xl mx-auto text-slate-400 text-sm sm:text-base leading-relaxed mb-8"
           >
-            Computer Science undergraduate at Manipal University Jaipur focusing on{' '}
-            <strong className="text-slate-200 font-semibold">Artificial Intelligence & Machine Learning</strong>.
-            Building real-world applications across Computer Vision, Voice AI, and Natural Language Processing.
+            Computer Science undergraduate at Manipal University Jaipur focused on{' '}
+            <strong className="text-slate-200 font-semibold">AI for environmental monitoring</strong>.
+            CycloneSense combines live storm feeds and satellite imagery with a track model evaluated on storms excluded from training.
           </motion.p>
 
           {/* Call to action buttons */}
@@ -202,8 +202,8 @@ export const Hero: React.FC = () => {
                 <Cpu className="w-4 h-4" />
                 <span>Specialization</span>
               </div>
-              <div className="text-white font-bold text-sm">Computer Vision & Voice AI</div>
-              <div className="text-slate-400 text-xs mt-0.5">FaceNet, MediaPipe, Speech AI</div>
+              <div className="text-white font-bold text-sm">Climate AI & Satellite ML</div>
+              <div className="text-slate-400 text-xs mt-0.5">Cyclone tracks, MODIS, Himawari</div>
             </motion.div>
 
             <motion.div
@@ -212,10 +212,10 @@ export const Hero: React.FC = () => {
             >
               <div className="flex items-center gap-2 text-amber-400 mb-1 font-semibold text-xs uppercase tracking-wider">
                 <Award className="w-4 h-4" />
-                <span>Hackathons</span>
+                <span>Track Research</span>
               </div>
-              <div className="text-white font-bold text-sm">Goldman Sachs Hackathon 2026</div>
-              <div className="text-slate-400 text-xs mt-0.5">Multi-agent drone routing engine</div>
+              <div className="text-white font-bold text-sm">North Indian Ocean track model</div>
+              <div className="text-slate-400 text-xs mt-0.5">7 / 8 leads beat persistence; not at +6 h</div>
             </motion.div>
 
             <motion.div
@@ -226,8 +226,8 @@ export const Hero: React.FC = () => {
                 <Code2 className="w-4 h-4" />
                 <span>Core Stack</span>
               </div>
-              <div className="text-white font-bold text-sm">Python, PyTorch & OpenCV</div>
-              <div className="text-slate-400 text-xs mt-0.5">Plus TensorFlow, Flask, C, Solidity</div>
+              <div className="text-white font-bold text-sm">Python, PyTorch & FastAPI</div>
+              <div className="text-slate-400 text-xs mt-0.5">Plus React, TypeScript, Docker, OpenCV</div>
             </motion.div>
           </motion.div>
         </motion.div>

@@ -5,7 +5,9 @@ export interface Project {
   description: string;
   tags: string[];
   githubUrl: string;
-  category: 'AI/ML' | 'Computer Vision' | 'NLP' | 'Blockchain' | 'Hackathon';
+  liveUrl?: string;
+  researchUrl?: string;
+  category: 'Climate AI' | 'AI/ML' | 'Computer Vision' | 'NLP' | 'Blockchain' | 'Hackathon';
   featured?: boolean;
   stars?: number;
   forks?: number;
@@ -24,7 +26,7 @@ export interface ProfileInfo {
   githubUrl: string;
   linkedinUrl: string;
   instagramUrl: string;
-  hackathonHighlights: string[];
+  selectedHighlights: string[];
   currentFocus: string[];
   funFact: string;
 }

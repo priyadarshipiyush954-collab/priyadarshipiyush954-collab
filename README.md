@@ -10,7 +10,7 @@
 </p>
 
 <a href="https://github.com/priyadarshipiyush954-collab">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=24&pause=1000&color=2980B9&center=true&vCenter=true&width=650&lines=CS+Undergrad+%40+Manipal+University+Jaipur;AI+%2F+ML+Enthusiast+%F0%9F%A7%A0;Building+with+Python%2C+TensorFlow%2C+PyTorch;Computer+Vision+%7C+NLP+%7C+Voice+AI;Open+to+AI%2FML+Internships+%F0%9F%9A%80" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=24&pause=1000&color=2980B9&center=true&vCenter=true&width=650&lines=CS+Undergrad+%40+Manipal+University+Jaipur;AI+%2F+ML+Enthusiast+%F0%9F%A7%A0;Building+with+Python%2C+TensorFlow%2C+PyTorch;Climate+AI+%7C+Satellite+ML+%7C+Computer+Vision;Open+to+AI%2FML+Internships+%F0%9F%9A%80" alt="Typing SVG" />
 </a>
 
 <br/>
@@ -29,12 +29,13 @@
 ```yaml
 name: Piyush Priyadarshi
 role: CS Undergraduate @ Manipal University Jaipur
-focus: Artificial Intelligence & Machine Learning
-building: Computer Vision · NLP · Voice AI
-stack: [Python, TensorFlow, PyTorch, OpenCV, Flask, C, Solidity]
+focus: Applied AI & Machine Learning for environmental monitoring
+building: Climate AI · Satellite ML · Computer Vision · NLP
+stack: [Python, PyTorch, TypeScript, React, FastAPI, Docker, OpenCV, TensorFlow]
 status: Open to AI/ML & Software Engineering internships
 ```
 
+- 🌪️ Building **CycloneSense**, a live cyclone dashboard with satellite layers, track forecasts, and a validation-based uncertainty cone
 - 🏆 Competing in hackathons — most recently the **Goldman Sachs India Hackathon 2026**
 - 🧩 Recently solved a multi-agent drone-routing problem (NFZ avoidance, energy management, parallelism)
 - ⛓️ Ran a gas-overhead benchmarking study across Solidity contract security patterns (ERC-721 / ERC-1155)
@@ -45,6 +46,19 @@ status: Open to AI/ML & Software Engineering internships
 ### 🚀 Featured Projects
 
 <table>
+<tr>
+<td colspan="2">
+
+**🌪️ [CycloneSense — Tropical Cyclone Monitoring & Forecasting](https://github.com/priyadarshipiyush954-collab/CycloneSense)** · [Live dashboard](https://cyclone-sense-2klx.vercel.app/)
+
+A live dashboard built around cyclone feeds and satellite imagery, with a research model for track and intensity forecasts.
+
+**Research snapshot:** the North Indian Ocean fine-tune uses 330 six-hourly windows across 20 storms, with five entire storms held out for validation. It beats the last-motion persistence baseline at 7 of 8 forecast leads, but has higher error at +6 h. This is a small research evaluation, not an operational forecast. [Read the model notes](https://github.com/priyadarshipiyush954-collab/CycloneSense/blob/main/docs/MODEL.md).
+
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) ![PyTorch](https://img.shields.io/badge/-PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white) ![NASA GIBS](https://img.shields.io/badge/-NASA%20GIBS-1F4E79?style=flat-square) ![NOAA IBTrACS](https://img.shields.io/badge/-NOAA%20IBTrACS-1F4E79?style=flat-square)
+
+</td>
+</tr>
 <tr>
 <td width="50%">
 
@@ -125,7 +139,7 @@ Autonomous multi-agent drone routing engine with NFZ avoidance and energy optimi
 ### 🛠️ Tech Stack
 
 <p>
-<img src="https://skillicons.dev/icons?i=python,tensorflow,pytorch,opencv,flask,solidity,c,git,github,vscode" />
+<img src="https://skillicons.dev/icons?i=python,pytorch,typescript,react,fastapi,docker,tensorflow,opencv,flask,solidity,c,git,github,vscode" />
 </p>
 
 ---
@@ -147,9 +161,11 @@ Autonomous multi-agent drone routing engine with NFZ avoidance and energy optimi
 
 ### 🎯 Currently
 
-- 🔭 Working on an AI-based resume analyzer, an AI/ML air-quality downscaling system, and a career-guidance platform for underserved students
-- 🌱 Sharpening competitive-programming skills — actively solving algorithmic and system-design problems for hackathons
-- 💬 Ask me about **Computer Vision, NLP, Voice AI, or Python/TensorFlow/PyTorch project builds**
+- 🔭 Building CycloneSense, a live dashboard for cyclone monitoring and research forecasts
+- 📊 Studying North Indian Ocean track prediction with storm-level holdouts and an explicit persistence baseline
+- 🛰️ Working with NOAA IBTrACS tracks, NASA GIBS imagery, and Himawari satellite feeds; the model results remain research-only
+- 🌱 Sharpening competitive-programming and system-design skills for hackathons
+- 💬 Ask me about **CycloneSense, satellite-based AI, Computer Vision, or Python/PyTorch/FastAPI builds**
 - ⚡ Fun fact: I'd rather ship a working prototype than polish a slide deck
 
 ---

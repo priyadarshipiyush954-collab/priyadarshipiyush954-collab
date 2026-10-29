@@ -73,10 +73,10 @@ export const AboutAndAchievements: React.FC = () => {
               <div className="mt-6 pt-4 border-t border-slate-800/80 text-slate-400">
                 <div className="flex items-center gap-2 text-amber-400 font-semibold mb-2">
                   <Trophy className="w-4 h-4" />
-                  <span>Key Hackathon Initiatives</span>
+                  <span>Research & Project Highlights</span>
                 </div>
                 <ul className="space-y-2 text-slate-300 text-[11px]">
-                  {profileData.hackathonHighlights.map((item, i) => (
+                  {profileData.selectedHighlights.map((item, i) => (
                     <li key={i} className="flex items-start gap-2">
                       <span className="text-amber-400 mt-0.5">✦</span>
                       <span>{item}</span>
@@ -150,7 +150,7 @@ export const AboutAndAchievements: React.FC = () => {
                   <span>Ask Me About</span>
                 </div>
                 <p className="text-xs text-slate-300">
-                  Computer Vision, NLP, Voice AI, or Python / TensorFlow / PyTorch architectures.
+                  Cyclone track forecasting, satellite-based AI, Computer Vision, or Python / PyTorch / FastAPI.
                 </p>
               </motion.div>
             </div>
