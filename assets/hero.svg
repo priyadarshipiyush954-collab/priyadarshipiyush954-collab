@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="900" height="240" role="img" aria-label="Piyush Priyadarshi - Applied AI and ML">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0D1117"/>
+      <stop offset="1" stop-color="#14264a"/>
+    </linearGradient>
+    <linearGradient id="ttl" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6DD5FA"/>
+      <stop offset="1" stop-color="#58A6FF"/>
+    </linearGradient>
+    <style>
+      .t1{font:700 44px 'Segoe UI',Arial,sans-serif;fill:url(#ttl);animation:in 1.2s ease-out both}
+      .t2{font:500 17px 'Courier New',monospace;fill:#C9D1D9;animation:in 1.2s .5s ease-out both}
+      .ln{stroke:#58A6FF;stroke-width:1;stroke-opacity:.25}
+      .nd{fill:#6DD5FA}
+      @keyframes in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+    </style>
+  </defs>
+  <rect width="900" height="240" rx="14" fill="url(#bg)"/>
+  <g class="ln">
+    <line x1="60" y1="50" x2="150" y2="120"/><line x1="150" y1="120" x2="70" y2="190"/>
+    <line x1="150" y1="120" x2="250" y2="60"/><line x1="250" y1="60" x2="330" y2="170"/>
+    <line x1="570" y1="40" x2="660" y2="110"/><line x1="660" y1="110" x2="590" y2="195"/>
+    <line x1="660" y1="110" x2="780" y2="55"/><line x1="780" y1="55" x2="850" y2="150"/>
+    <line x1="780" y1="55" x2="840" y2="30"/><line x1="660" y1="110" x2="760" y2="190"/>
+  </g>
+  <g class="nd">
+    <circle cx="60" cy="50" r="4"><animate attributeName="opacity" values=".3;1;.3" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="150" cy="120" r="6"><animate attributeName="r" values="4;8;4" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="70" cy="190" r="4"><animate attributeName="opacity" values="1;.3;1" dur="3.4s" repeatCount="indefinite"/></circle>
+    <circle cx="250" cy="60" r="5"><animate attributeName="opacity" values=".4;1;.4" dur="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="330" cy="170" r="4"><animate attributeName="r" values="3;6;3" dur="3.1s" repeatCount="indefinite"/></circle>
+    <circle cx="570" cy="40" r="4"><animate attributeName="opacity" values="1;.3;1" dur="2.6s" repeatCount="indefinite"/></circle>
+    <circle cx="660" cy="110" r="7"><animate attributeName="r" values="5;9;5" dur="2.2s" repeatCount="indefinite"/></circle>
+    <circle cx="590" cy="195" r="4"><animate attributeName="opacity" values=".3;1;.3" dur="3.3s" repeatCount="indefinite"/></circle>
+    <circle cx="780" cy="55" r="5"><animate attributeName="opacity" values=".4;1;.4" dur="2.9s" repeatCount="indefinite"/></circle>
+    <circle cx="850" cy="150" r="4"><animate attributeName="r" values="3;6;3" dur="2.7s" repeatCount="indefinite"/></circle>
+    <circle cx="840" cy="30" r="3"><animate attributeName="opacity" values="1;.3;1" dur="3.6s" repeatCount="indefinite"/></circle>
+    <circle cx="760" cy="190" r="4"><animate attributeName="opacity" values=".3;1;.3" dur="2.5s" repeatCount="indefinite"/></circle>
+  </g>
+  <text class="t1" x="450" y="112" text-anchor="middle">Piyush Priyadarshi</text>
+  <text class="t2" x="450" y="152" text-anchor="middle">Applied AI &#183; Climate &amp; Satellite ML &#183; Computer Vision</text>
+  <text class="t2" x="450" y="182" text-anchor="middle" style="fill:#6DD5FA">CSE @ Manipal University Jaipur</text>
+</svg>
